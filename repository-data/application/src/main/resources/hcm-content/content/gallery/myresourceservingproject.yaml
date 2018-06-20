@@ -1,0 +1,7 @@
+/content/gallery/myresourceservingproject:
+  jcr:primaryType: hippogallery:stdImageGallery
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 4f4d8cfe-083f-44e5-92c3-a2e6601f398e
+  hippo:name: My Resource Serving Project
+  hippostd:foldertype: [new-image-folder]
+  hippostd:gallerytype: ['hippogallery:imageset']

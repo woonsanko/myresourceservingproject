@@ -1,0 +1,145 @@
+/content/documents/myresourceservingproject/events:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: a2cf1d58-9e9d-4bb8-8cc7-956bcdb4227e
+  hippostd:foldertype: [new-events-document, new-events-folder]
+  hippotranslation:id: f8c1d85d-d6ff-43f3-b98c-21f1b62f4c85
+  hippotranslation:locale: en
+  /2018:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+    jcr:uuid: c290ee69-9f1f-4bd3-a3ac-c9fec3ea7cf2
+    hippostd:foldertype: [new-events-document, new-events-folder]
+    hippotranslation:id: 820ac3c5-d5ef-409e-9f93-1e2feaf259f5
+    hippotranslation:locale: en
+    /06:
+      jcr:primaryType: hippostd:folder
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+      jcr:uuid: 2e4cf3a6-07ff-4b00-a2b9-17ab9d9252d3
+      hippostd:foldertype: [new-events-document, new-events-folder]
+      hippotranslation:id: 5ec72fc7-3171-4c57-84a0-9ff3077b3511
+      hippotranslation:locale: en
+      /breakfast:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:uuid: b8f5eb45-7200-452a-b26e-3118a0dc60b8
+        hippo:name: Breakfast
+        /breakfast:
+          jcr:primaryType: myresourceservingproject:eventsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: f2edc2e1-61fc-4f88-a517-6a0ad8be1e87
+          hippo:availability: [live, preview]
+          hippostd:holder: admin
+          hippostd:state: published
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T11:00:00+01:00
+          hippostdpubwf:lastModificationDate: 2013-11-12T11:11:00+01:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippostdpubwf:publicationDate: 2013-11-12T12:16:00+01:00
+          hippotranslation:id: 23dacb5a-439f-4303-8f7c-0f136e3e784a
+          hippotranslation:locale: en
+          myresourceservingproject:date: 2013-11-12T08:00:00+01:00
+          myresourceservingproject:documenttype: event
+          myresourceservingproject:enddate: 2019-06-20T16:58:00-04:00
+          myresourceservingproject:introduction: Start the day with a nice breakfast.
+          myresourceservingproject:location: Room 101
+          myresourceservingproject:title: Breakfast
+          /myresourceservingproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <html>
+                        <body>
+
+                        <p>Breakfast is served starting from 8:00 until 9:30.</p>
+
+                        </body>
+                        </html>
+          /myresourceservingproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: c8f03498-56eb-46c9-83b2-cf014f2e03d7
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /introduction-speech:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:uuid: 18e36c35-429d-4fee-b76e-eeabcbfc08bb
+        hippo:name: Introduction speech
+        /introduction-speech:
+          jcr:primaryType: myresourceservingproject:eventsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: a433ff3b-2a92-42c5-bb02-99549e9e0d0b
+          hippo:availability: [live, preview]
+          hippostd:holder: admin
+          hippostd:state: published
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T11:02:00+01:00
+          hippostdpubwf:lastModificationDate: 2013-11-12T11:16:00+01:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippostdpubwf:publicationDate: 2013-11-12T12:16:00+01:00
+          hippotranslation:id: f7e6c875-f124-4c6e-b3cf-46ac39478982
+          hippotranslation:locale: en
+          myresourceservingproject:date: 2013-11-12T10:00:00+01:00
+          myresourceservingproject:documenttype: event
+          myresourceservingproject:enddate: 2019-06-20T16:58:00-04:00
+          myresourceservingproject:introduction: After breakfast there will be an
+            introductory speech.
+          myresourceservingproject:location: Room 400
+          myresourceservingproject:title: Introduction speech
+          /myresourceservingproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <html>
+                        <body>
+
+                        <p>Speech will be about the workshop.</p>
+
+                        </body>
+                        </html>
+          /myresourceservingproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 9f32434e-84e3-4150-a6f2-d89a67be2fb1
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /workshop:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 7a29ec60-2689-48b2-aca2-49696c5c23eb
+        /workshop:
+          jcr:primaryType: myresourceservingproject:eventsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: 81821091-e693-4102-89fd-da3470d417f9
+          hippo:availability: [live, preview]
+          hippostd:holder: admin
+          hippostd:state: published
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T11:16:00+01:00
+          hippostdpubwf:lastModificationDate: 2013-11-12T11:18:00+01:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippostdpubwf:publicationDate: 2013-11-12T12:16:00+01:00
+          hippotranslation:id: 09f20326-605e-4124-a76e-6238add1d665
+          hippotranslation:locale: en
+          myresourceservingproject:date: 2013-11-12T13:00:00+01:00
+          myresourceservingproject:documenttype: event
+          myresourceservingproject:enddate: 2019-06-20T16:58:00-04:00
+          myresourceservingproject:introduction: Workshop starts at 1:00
+          myresourceservingproject:location: Room 600
+          myresourceservingproject:title: Workshop
+          /myresourceservingproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <html>
+                        <body>
+                        <strong>Everybody </strong>
+                        <p>can join the workshop and start practicing what they learned during the last
+                        week.</p>
+
+                        </body>
+                        </html>
+          /myresourceservingproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: d035387b-f9ce-49f6-bcb0-9ab6915a2d5f
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []

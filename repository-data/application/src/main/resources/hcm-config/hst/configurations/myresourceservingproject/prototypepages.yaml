@@ -1,0 +1,4 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/myresourceservingproject/hst:prototypepages:
+      jcr:primaryType: hst:pages

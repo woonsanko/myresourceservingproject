@@ -1,0 +1,90 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:types/myresourceservingproject:newsdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: News Item
+        myresourceservingproject:author: Author
+        myresourceservingproject:content: Content
+        myresourceservingproject:date: Date
+        myresourceservingproject:image: Image
+        myresourceservingproject:introduction: Introduction
+        myresourceservingproject:location: Location
+        myresourceservingproject:source: Source
+        myresourceservingproject:title: Title
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Nieuwsbericht
+        myresourceservingproject:author: Auteur
+        myresourceservingproject:content: Inhoud
+        myresourceservingproject:date: Datum
+        myresourceservingproject:image: Afbeelding
+        myresourceservingproject:introduction: Introductie
+        myresourceservingproject:location: Locatie
+        myresourceservingproject:source: Bron
+        myresourceservingproject:title: Titel
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: News
+        myresourceservingproject:author: Verfasser
+        myresourceservingproject:content: Inhalt
+        myresourceservingproject:date: Datum
+        myresourceservingproject:image: Abbildung
+        myresourceservingproject:introduction: Einführung
+        myresourceservingproject:location: Standort
+        myresourceservingproject:source: Quelle
+        myresourceservingproject:title: Titel
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Message d'info
+        myresourceservingproject:author: Auteur
+        myresourceservingproject:content: Contenu
+        myresourceservingproject:date: Date
+        myresourceservingproject:image: Image
+        myresourceservingproject:introduction: Introduction
+        myresourceservingproject:location: Lieu
+        myresourceservingproject:source: Source
+        myresourceservingproject:title: Titre
+    /hippo:configuration/hippo:translations/hippo:types/myresourceservingproject:eventsdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Event
+        myresourceservingproject:content: Content
+        myresourceservingproject:date: Start date
+        myresourceservingproject:enddate: End date
+        myresourceservingproject:image: Image
+        myresourceservingproject:introduction: Introduction
+        myresourceservingproject:location: Location
+        myresourceservingproject:title: Title
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Evenement
+        myresourceservingproject:content: Inhoud
+        myresourceservingproject:date: Startdatum
+        myresourceservingproject:enddate: Einddatum
+        myresourceservingproject:image: Afbeelding
+        myresourceservingproject:introduction: Introductie
+        myresourceservingproject:location: Locatie
+        myresourceservingproject:title: Titel
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Événement
+        myresourceservingproject:content: Contenu
+        myresourceservingproject:date: Date de début
+        myresourceservingproject:enddate: Date de fin
+        myresourceservingproject:image: Image
+        myresourceservingproject:introduction: Introduction
+        myresourceservingproject:location: Lieu
+        myresourceservingproject:title: Titre
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Event
+        myresourceservingproject:content: Inhalt
+        myresourceservingproject:date: Startdatum
+        myresourceservingproject:enddate: Enddatum
+        myresourceservingproject:image: Abbildung
+        myresourceservingproject:introduction: Einführung
+        myresourceservingproject:location: Standort
+        myresourceservingproject:title: Titel

@@ -1,0 +1,7 @@
+group: 
+  name: myresourceservingproject
+  after: hippo-cms
+project: myresourceservingproject
+module: 
+  name: myresourceservingproject-repository-data-development
+  after: myresourceservingproject-repository-data-application

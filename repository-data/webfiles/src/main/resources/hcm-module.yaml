@@ -1,0 +1,5 @@
+group: 
+  name: myresourceservingproject
+  after: hippo-cms
+project: myresourceservingproject
+module: myresourceservingproject-repository-data-webfiles
