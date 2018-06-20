@@ -3,6 +3,13 @@
 <#-- @ftlvariable name="item" type="org.example.hst.resource.serving.beans.NewsDocument" -->
 <#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" -->
 <#if pageable?? && pageable.items?has_content>
+
+  <div style="background-color: #ddffdd">
+    <h3>HST Resource URL Test</h3>
+    <@hst.resourceURL var="downloadLink" resourceId="download" />
+    <a href="${downloadLink}">Download Now!</a>
+  </div>
+
   <div>
     <#list pageable.items as item>
       <@hst.link var="link" hippobean=item />

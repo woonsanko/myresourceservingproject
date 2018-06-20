@@ -11,6 +11,18 @@
     </p>
   </#if>
 </div>
+
+<div style="background-color: #ddffdd">
+  <h3>HST Resource URL Test</h3>
+  <@hst.resourceURL var="downloadLink" resourceId="download" />
+  <form method="POST" action="${downloadLink}">
+    Download document list published on between
+    <input type="text" name="start" value="2000-01-01" size="10" placeholder="yyyy-MM-dd" /> ~ 
+    <input type="text" name="start" value="2018-12-31" size="10" placeholder="yyyy-MM-dd" />
+    <input type="submit" value="Download Now!" />
+  </form>
+</div>
+
 <div>
   <@hst.include ref="container"/>
 </div>
