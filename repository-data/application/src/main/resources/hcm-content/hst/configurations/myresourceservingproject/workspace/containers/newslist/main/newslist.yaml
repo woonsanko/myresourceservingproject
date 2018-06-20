@@ -1,6 +1,6 @@
 /hst:hst/hst:configurations/myresourceservingproject/hst:workspace/hst:containers/newslist/main/newslist:
   jcr:primaryType: hst:containeritemcomponent
-  hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsNewsComponent
+  hst:componentclassname: org.example.hst.resource.serving.components.MyEssentialsNewsComponent
   hst:label: News List
   hst:parameternames: [hidePastEvents, documentTypes, sortField, sortOrder, includeSubtypes,
     showPagination, path, pageSize, documentDateField, hideFutureItems]
