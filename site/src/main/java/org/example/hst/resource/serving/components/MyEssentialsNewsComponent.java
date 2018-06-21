@@ -29,8 +29,12 @@ public class MyEssentialsNewsComponent extends EssentialsNewsComponent {
         if ("download".equals(request.getResourceID())) {
             final Calendar start = MyDemoMiscUtils.parseDate(request.getParameter("start"));
             final Calendar end = MyDemoMiscUtils.parseDate(request.getParameter("end"));
+            // set a model object in request attributes, so that the resource dispatching servlet will read it to write CSV.
             request.setAttribute("documents", MyDemoMiscUtils.queryDocumentsBetweenPublicationDates(start, end));
 
+            // Note: this is a bit tricky part, but response content type or headers must be set in this method,
+            //       not in the 'dispatched' ('included') servlet because any settings there will be ignored
+            //       in the original response in this component.
             response.setContentType("application/octet-stream");
             response.addHeader("Content-Disposition", "attachment; filename=\"Document_List.csv\"");
         }
