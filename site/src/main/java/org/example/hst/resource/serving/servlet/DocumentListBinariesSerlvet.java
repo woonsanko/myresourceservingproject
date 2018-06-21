@@ -23,14 +23,11 @@ public class DocumentListBinariesSerlvet extends HttpServlet {
 
     private static Logger log = LoggerFactory.getLogger(DocumentListBinariesSerlvet.class);
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         log.debug("DocumentListBinariesSerlvet#doGet...");
 
         final List<HippoBean> documents = (List<HippoBean>) request.getAttribute("documents");
-
-        response.setContentType("application/octet-stream");
-        response.addHeader("Content-Disposition", "attachment; filename=\"Document_List.csv\"");
 
         try (ServletOutputStream out = response.getOutputStream()) {
             out.println("Name,Path,Pub_Date");
@@ -46,4 +43,10 @@ public class DocumentListBinariesSerlvet extends HttpServlet {
             log.error("Repository exception occurred.", e);
         }
     }
+
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
+
 }

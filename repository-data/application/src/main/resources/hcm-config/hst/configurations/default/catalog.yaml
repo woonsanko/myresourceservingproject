@@ -9,6 +9,7 @@ definitions:
         hst:label: News List
         hst:template: newslist-main-newslist
         hst:xtype: hst.item
+        hst:resourcetemplate: doclistdownload
       /eventslist:
         jcr:primaryType: hst:containeritemcomponent
         hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsEventsComponent

@@ -30,6 +30,9 @@ public class MyEssentialsNewsComponent extends EssentialsNewsComponent {
             final Calendar start = MyDemoMiscUtils.parseDate(request.getParameter("start"));
             final Calendar end = MyDemoMiscUtils.parseDate(request.getParameter("end"));
             request.setAttribute("documents", MyDemoMiscUtils.queryDocumentsBetweenPublicationDates(start, end));
+
+            response.setContentType("application/octet-stream");
+            response.addHeader("Content-Disposition", "attachment; filename=\"Document_List.csv\"");
         }
     }
 

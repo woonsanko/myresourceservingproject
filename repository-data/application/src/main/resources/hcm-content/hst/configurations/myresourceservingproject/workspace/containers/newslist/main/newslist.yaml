@@ -6,5 +6,6 @@
     showPagination, path, pageSize, documentDateField, hideFutureItems]
   hst:parametervalues: ['on', 'myresourceservingproject:newsdocument', '', desc, 'off',
     'on', '', '10', 'myresourceservingproject:date', 'on']
+  hst:resourcetemplate: doclistdownload
   hst:template: newslist-main-newslist
   hst:xtype: hst.item
