@@ -60,4 +60,4 @@ The Homepage uses an HST Resource URL in the form action attribute and form POST
 
 ## Gotchas
 
-- Because the resource templates are dispatched through ```RequestDispatcher#include(...)```, any call on ```ServletResponse#setContentType(...)``` or ```HttpServletResponse#setHeader(...)``` or ```HttpServletResponse.addHeader(...)``` are not passed back to the original ```HttpServletResponse``` object which is available in the ```#doBeforeServeResource(...)``` method of your ```HstComponent```. Therefore, ContentType or Headers must be set in your ```#doBeforeServeResource(...)``` method, not in the dispatched servlet code.
+- Because the resource templates are dispatched through ```RequestDispatcher#include(...)```, any calls on ```ServletResponse#setContentType(...)``` or ```HttpServletResponse#setHeader(...)``` or ```HttpServletResponse.addHeader(...)``` are not passed back to the original ```HttpServletResponse``` object which is available in the ```#doBeforeServeResource(...)``` method of your ```HstComponent```. Therefore, ContentType or Headers must be set in your ```#doBeforeServeResource(...)``` method, not in the dispatched servlet code.
