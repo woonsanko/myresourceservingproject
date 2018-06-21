@@ -138,6 +138,7 @@
     -->
     <load-on-startup>200</load-on-startup>
   </servlet>
+
   <servlet>
     <servlet-name>TemplateComposerResourceServlet</servlet-name>
     <servlet-class>org.onehippo.cms7.utilities.servlet.ResourceServlet</servlet-class>
@@ -175,6 +176,11 @@
     <servlet-class>org.hippoecm.hst.servlet.HstPingServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>DocumentListBinariesSerlvet</servlet-name>
+    <servlet-class>org.example.hst.resource.serving.servlet.DocumentListBinariesSerlvet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>BinariesServlet</servlet-name>
     <url-pattern>/binaries/*</url-pattern>
@@ -208,6 +214,11 @@
   <servlet-mapping>
     <servlet-name>PingServlet</servlet-name>
     <url-pattern>/ping/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DocumentListBinariesSerlvet</servlet-name>
+    <url-pattern>/doclistdownload</url-pattern>
   </servlet-mapping>
 
   <security-constraint>
