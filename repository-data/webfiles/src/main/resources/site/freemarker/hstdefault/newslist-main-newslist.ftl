@@ -6,7 +6,10 @@
 
   <div style="background-color: #ddffdd">
     <h3>HST Resource URL Test</h3>
-    <@hst.resourceURL var="downloadLink" resourceId="download" />
+    <@hst.resourceURL var="downloadLink" resourceId="download">
+      <@hst.param name="start" value="2000-01-01" />
+      <@hst.param name="end" value="2018-12-31" />
+    </@hst.resourceURL>
     <a href="${downloadLink}">Download Now!</a>
   </div>
 

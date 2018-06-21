@@ -1,6 +1,9 @@
 package org.example.hst.resource.serving.components;
 
+import java.util.Calendar;
+
 import org.hippoecm.hst.core.component.GenericHstComponent;
+import org.hippoecm.hst.core.component.HstComponentException;
 import org.hippoecm.hst.core.component.HstRequest;
 import org.hippoecm.hst.core.component.HstResponse;
 import org.slf4j.Logger;
@@ -16,4 +19,14 @@ public class HomePageMainComponent extends GenericHstComponent {
         super.doBeforeRender(request, response);
     }
 
+    @Override
+    public void doBeforeServeResource(HstRequest request, HstResponse response) throws HstComponentException {
+        log.debug("HomePageMainComponent#doBeforeServeResource...");
+
+        if ("download".equals(request.getResourceID())) {
+            final Calendar start = MyDemoMiscUtils.parseDate(request.getParameter("start"));
+            final Calendar end = MyDemoMiscUtils.parseDate(request.getParameter("end"));
+            request.setAttribute("documents", MyDemoMiscUtils.queryDocumentsBetweenPublicationDates(start, end));
+        }
+    }
 }

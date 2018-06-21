@@ -18,7 +18,7 @@
   <form method="POST" action="${downloadLink}">
     Download document list published on between
     <input type="text" name="start" value="2000-01-01" size="10" placeholder="yyyy-MM-dd" /> ~ 
-    <input type="text" name="start" value="2018-12-31" size="10" placeholder="yyyy-MM-dd" />
+    <input type="text" name="end" value="2018-12-31" size="10" placeholder="yyyy-MM-dd" />
     <input type="submit" value="Download Now!" />
   </form>
 </div>
